@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Titles;
+    src: url(/fonts/Ftreetime-Tiempo.ttf);
+}
+
+@font-face {
+    font-family: body;
+    src: url(fonts/Freetime-Averta.otf)
+}
+
+body {
+    font-family: body;
+    font-size: 1em;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+
+.dark {
+    background-color: #303131;
+    color: white;
+    line-height: 1.8;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 15% 35% 35% 15%;
+}
+
+
+nav {
+    left: 0;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: deeppink;
+}
+  
+.text {
+    padding-top: 10%;
+    width: 500px;
+}
+
+.content {
+    background-color: aqua;
+}
+
+.UX {
+    padding-bottom: 200px;
+}
+.Madlug {
+    padding-bottom: 200px;
+}
+.Question {
+    padding-bottom: 200px;
+}
+
+h3 {
+    font-size: 1.8em;
+    font-family: Titles;
+    padding-bottom: 25px;
+}
+
+p {
+    line-height: 1.2;
+}
+
+p.dark {
+    line-height: 1.4;
+}
