@@ -120,6 +120,7 @@ q {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
+    grid-row-end: 4;
     margin-left: 50px;
     text-align: right;
     max-width: 35em;
