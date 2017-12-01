@@ -78,7 +78,7 @@ q {
     grid-row-start: 3;
     grid-row-end: 4;
     color: #F0C22E;
-    border-bottom: 8px solid #F0C22E;
+/*    border-bottom: 8px solid #F0C22E;*/
 }
 
 .item_three {
