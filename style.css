@@ -22,7 +22,7 @@ body {
 
 
 .dark {
-    background-color: #4A4A4A;
+    background-color: #313131;
     color: white;
     animation-name: bg_colour;
     animation-duration: 1s;
@@ -41,13 +41,14 @@ nav {
 }
 
 a {
+    font-family: Titles;
     text-decoration: none;
     color: black;
-    animation-name: appear;
-    animation-duration: 2s;
+    transition: color 0.5s;
 }
+
 a:hover {
-    color: deeppink;
+    color: #F0C22E;
 }
 
 a.white {
@@ -55,7 +56,7 @@ a.white {
 }
 
 a.white:hover {
-    color: deeppink;
+    color: #F0C22E;
 }
 
 h1 {
@@ -101,6 +102,17 @@ p.dark {
 
 }
 
+.item_four {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    padding-top: 10%;
+    padding-bottom: 15%;
+    font-family: Titles;
+    font-size: 1.4em;
+    float: right;
+}
+
 .section {
     padding-bottom: 50px;
 }
@@ -132,5 +144,5 @@ p.dark {
 
 @keyframes bg_colour {
     from {background-color: white;}
-    to {background-color: #4A4A4A;}
+    to {background-color: #313131;}
 }
