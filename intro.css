@@ -24,18 +24,18 @@ body {
 h1 {
     font-family: Titles;
     font-size: 1.8em;
-    
+    padding-bottom: 5px;
 }
 
 h2 {
     font-family: Titles;
     font-size: 1.4em;
+    padding-bottom: 5px;
 }
 
 h3 {
     font-family: Titles;
     font-size: 1.2em;
-    font-family: Titles;
     padding-bottom: 25px;
 }
 
@@ -43,10 +43,11 @@ a {
     font-family: Titles;
     text-decoration: none;
     color: black;
+    transition: color 0.5s;
 }
 
 a:hover {
-    color: deeppink;
+    color: #F0C22E;
 }
 
 q {
@@ -76,6 +77,8 @@ q {
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
+    color: #F0C22E;
+    border-bottom: 8px solid #F0C22E;
 }
 
 .item_three {
@@ -84,6 +87,7 @@ q {
     grid-row-start: 2;
     grid-row-end: 4;
     max-width: 35em;
+    padding-left: 10px;
 }
 
 .container_two {
