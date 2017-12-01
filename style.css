@@ -91,8 +91,6 @@ h3 {
 
 p {
     line-height: 1.2;
-    animation-name: appear;
-    animation-duration: 4s;
 }
 
 p.dark {
@@ -101,22 +99,22 @@ p.dark {
 
 .one {
     animation-name: appear;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 .two {
     animation-name: appear;
-    animation-duration: 4s;
+    animation-duration: 2s;
 }
 
 .three {
     animation-name: appear;
-    animation-duration: 6s;
+    animation-duration: 3s;
 }
 
 .four {
     animation-name: appear;
-    animation-duration: 8s;
+    animation-duration: 4s;
 }
 
 @keyframes appear {
