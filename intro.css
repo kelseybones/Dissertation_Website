@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Titles;
+    src: url(/fonts/Ftreetime-Tiempo.ttf);
+}
+
+@font-face {
+    font-family: body;
+    src: url(fonts/Freetime-Averta.otf)
+}
+
+body {
+    font-family: body;
+    font-size: 1em;
+    line-height: 1.8em;
+    font-family: sans-serif;
+    
+}
+
+h1 {
+    font-family: Titles;
+    font-size: 1.8em;
+    
+}
+
+h2 {
+    font-family: Titles;
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-family: Titles;
+    padding-bottom: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: deeppink;
+}
+
+q {
+    font-family: Titles;
+    font-size: 1.4em;
+    max-width: 35em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 15% 25% 30% 30%;
+    grid-template-rows: 20% 60% 20%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.item_one {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-bottom: 20px;
+}
+
+.item_two {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.item_three {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    max-width: 35em;
+}
+
+.container_two {
+    display: grid;
+    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.item_four {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    max-width: 35em;
+    
+}
+
+.item_five {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    padding-top: 10%;
+    padding-bottom: 15%;
+    font-family: Titles;
+    font-size: 1.4em;
+    float: right;
+}
+
+.item_six {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    margin-left: 50px;
+    text-align: right;
+    max-width: 35em;
+
+}

@@ -16,15 +16,16 @@
 body {
     font-family: body;
     font-size: 1em;
-    background-color: white;
+    line-height: 1.8em;
     font-family: sans-serif;
 }
 
 
 .dark {
-    background-color: #303131;
+    background-color: #4A4A4A;
     color: white;
-    line-height: 1.8;
+    animation-name: bg_colour;
+    animation-duration: 1s;
 }
 
 .container {
@@ -41,8 +42,18 @@ nav {
 a {
     text-decoration: none;
     color: black;
+    animation-name: appear;
+    animation-duration: 2s;
 }
 a:hover {
+    color: deeppink;
+}
+
+a.white {
+    color: white;
+}
+
+a.white:hover {
     color: deeppink;
 }
   
@@ -59,7 +70,7 @@ a:hover {
 }
 
 .content {
-    background-color: white;
+
 }
 
 .UX {
@@ -80,8 +91,40 @@ h3 {
 
 p {
     line-height: 1.2;
+    animation-name: appear;
+    animation-duration: 4s;
 }
 
 p.dark {
     line-height: 1.4;
+}
+
+.one {
+    animation-name: appear;
+    animation-duration: 2s;
+}
+
+.two {
+    animation-name: appear;
+    animation-duration: 4s;
+}
+
+.three {
+    animation-name: appear;
+    animation-duration: 6s;
+}
+
+.four {
+    animation-name: appear;
+    animation-duration: 8s;
+}
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes bg_colour {
+    from {background-color: white;}
+    to {background-color: #4A4A4A;}
 }
