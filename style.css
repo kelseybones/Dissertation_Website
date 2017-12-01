@@ -31,6 +31,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 15% 35% 35% 15%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
 
@@ -56,36 +57,22 @@ a.white {
 a.white:hover {
     color: deeppink;
 }
-  
-.bottom_link {
+
+h1 {
+    font-family: Titles;
+    font-size: 1.8em;
+    padding-bottom: 5px;
+}
+
+h2 {
     font-family: Titles;
     font-size: 1.4em;
-    padding-bottom: 20%;
-    float: right;
-}
-
-.text {
-    padding-top: 10%;
-    width: 500px;
-}
-
-.content {
-
-}
-
-.UX {
-    padding-bottom: 200px;
-}
-.Madlug {
-    padding-bottom: 200px;
-}
-.Question {
-    padding-bottom: 100px;
+    padding-bottom: 5px;
 }
 
 h3 {
-    font-size: 1.8em;
     font-family: Titles;
+    font-size: 1.2em;
     padding-bottom: 25px;
 }
 
@@ -95,6 +82,27 @@ p {
 
 p.dark {
     line-height: 1.4;
+}
+
+.item_one {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.item_two {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+.item_three {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+.section {
+    padding-bottom: 50px;
 }
 
 .one {
