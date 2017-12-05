@@ -77,10 +77,11 @@ h3 {
     font-family: Titles;
     font-size: 1.2em;
     padding-bottom: 25px;
+    padding-top: 100px;
 }
 
 p {
-    line-height: 1.2;
+    line-height: 1.8;
 }
 
 p.dark {
@@ -115,10 +116,6 @@ p.dark {
     font-family: Titles;
     font-size: 1.4em;
     float: right;
-}
-
-.section {
-    padding-bottom: 50px;
 }
 
 .one {
