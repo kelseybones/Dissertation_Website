@@ -38,8 +38,8 @@ body {
 
 
 nav {
-    left: 0;
-    line-height: 1.8;
+    top: 40%;
+    position: fixed;
 }
 
 a {
@@ -89,25 +89,14 @@ p.dark {
 }
 
 .item_one {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    top: 40%;
-    position: fixed;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    max-width: 35em;
 }
 
 .item_two {
-    grid-column-start: 2;
-    grid-column-end: 3;
-
-}
-
-.item_three {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    padding-top: 10%;
-}
-
-.item_four {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 5;
@@ -116,6 +105,16 @@ p.dark {
     font-family: Titles;
     font-size: 1.4em;
     float: right;
+}
+
+.item_three {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-left: 50px;
+    text-align: right;
+    max-width: 35em;
 }
 
 .one {
