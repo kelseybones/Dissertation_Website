@@ -18,7 +18,13 @@ body {
     font-size: 1em;
     line-height: 1.8em;
     font-family: sans-serif;
-    
+    background-color: white;
+    color: black;
+}
+
+nav {
+    top: 40%;
+    position: fixed;
 }
 
 h1 {
@@ -62,6 +68,10 @@ q {
     grid-template-rows: 20% 60% 20%;
     padding-top: 15%;
     padding-bottom: 15%;
+    
+    position: relative;
+    animation-name: appear_and_move;
+    animation-duration: 1.5s;
 }
 
 .item_one {
@@ -78,7 +88,6 @@ q {
     grid-row-start: 3;
     grid-row-end: 4;
     color: #F0C22E;
-/*    border-bottom: 8px solid #F0C22E;*/
 }
 
 .item_three {
@@ -124,5 +133,9 @@ q {
     margin-left: 50px;
     text-align: right;
     max-width: 35em;
+}
 
+@keyframes appear_and_move {
+    from {opacity: 0; top: -200px;}
+    to {opacity: 1; top: 0px;}
 }

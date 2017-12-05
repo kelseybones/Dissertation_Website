@@ -14,6 +14,7 @@
 }
 
 body {
+    background-color: white;
     font-family: body;
     font-size: 1em;
     line-height: 1.8em;
@@ -32,6 +33,7 @@ body {
     display: grid;
     grid-template-columns: 15% 35% 35% 15%;
     grid-template-rows: 20% 20% 20% 20% 20%;
+    padding-top: 10%;
 }
 
 
@@ -88,6 +90,8 @@ p.dark {
 .item_one {
     grid-column-start: 1;
     grid-column-end: 2;
+    top: 40%;
+    position: fixed;
 }
 
 .item_two {
@@ -99,7 +103,7 @@ p.dark {
 .item_three {
     grid-column-start: 2;
     grid-column-end: 3;
-
+    padding-top: 10%;
 }
 
 .item_four {
