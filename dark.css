@@ -138,18 +138,6 @@ q {
     float: right;
 }
 
-.invisible_one {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 5;
-}
-
-.invisible_two {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-}
-
 .one {
     animation-name: appear;
     animation-duration: 1s;
