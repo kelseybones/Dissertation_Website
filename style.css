@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: Titles;
-    src: url(/fonts/Ftreetime-Tiempo.ttf);
+    src: url(fonts/Ftreetime-Tiempo.ttf);
 }
 
 @font-face {
@@ -91,6 +91,7 @@ p.dark {
 q {
     font-family: Titles;
     font-size: 1.4em;
+    max-width: 35em;
 }
 
 .item_one {
