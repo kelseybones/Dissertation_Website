@@ -26,6 +26,9 @@ nav {
     top: 40%;
     position: fixed;
     z-index: 100;
+    
+    animation-name: appear_and_move_left;
+    animation-duration: 1.5s;
 }
 
 h1 {
@@ -69,10 +72,6 @@ q {
     grid-template-rows: 20% 60% 20%;
     padding-top: 15%;
     padding-bottom: 15%;
-    
-    position: relative;
-    animation-name: appear_and_move;
-    animation-duration: 1.5s;
 }
 
 .item_one {
@@ -81,6 +80,10 @@ q {
     grid-row-start: 2;
     grid-row-end: 3;
     padding-bottom: 20px;
+    
+    position: relative;
+    animation-name: appear_and_move;
+    animation-duration: 1.5s;
 }
 
 .item_two {
@@ -89,6 +92,10 @@ q {
     grid-row-start: 3;
     grid-row-end: 4;
     color: #F0C22E;
+        
+    position: relative;
+    animation-name: appear_and_move;
+    animation-duration: 1.2s;
 }
 
 .item_three {
@@ -98,12 +105,20 @@ q {
     grid-row-end: 4;
     max-width: 35em;
     padding-left: 10px;
+        
+    position: relative;
+    animation-name: appear_and_move;
+    animation-duration: 1.3s;
 }
 
 .container_two {
     display: grid;
     grid-template-columns: 15% 35% 35% 15%;
     grid-template-rows: 20% 20% 20% 20% 20%;
+    
+    position: relative;
+    animation-name: appear_and_move_left;
+    animation-duration: 1.5s;
 }
 
 .item_four {
@@ -139,4 +154,9 @@ q {
 @keyframes appear_and_move {
     from {opacity: 0; top: -200px;}
     to {opacity: 1; top: 0px;}
+}
+
+@keyframes appear_and_move_left {
+    from {opacity: 0; left: -200px;}
+    to {opacity: 1; left: 0px;}
 }

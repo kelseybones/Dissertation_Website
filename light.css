@@ -26,12 +26,18 @@ body {
     grid-template-columns: 15% 35% 40% 10%;
     grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     padding-top: 10%;
+    
+
 }
 
 
 nav {
     top: 40%;
     position: fixed;
+    z-index: 100;
+    
+    animation-name: appear_and_move_left;
+    animation-duration: 1.5s;
 }
 
 a {
@@ -49,6 +55,10 @@ h1 {
     font-family: Titles;
     font-size: 1.8em;
     padding-bottom: 5px;
+    
+    position: relative;
+    animation-name: appear_and_move;
+    animation-duration: 1.3s;
 }
 
 h2 {
@@ -80,6 +90,9 @@ q {
     grid-row-start: 1;
     grid-row-end: 4;
     max-width: 35em;
+        
+    animation-name: appear;
+    animation-duration: 3s;
 }
 
 .item_1 {
@@ -153,32 +166,17 @@ q {
     float: right;
 }
 
-.one {
-    animation-name: appear;
-    animation-duration: 1s;
+@keyframes appear_and_move {
+    from {opacity: 0; top: -200px;}
+    to {opacity: 1; top: 0px;}
 }
 
-.two {
-    animation-name: appear;
-    animation-duration: 2s;
-}
-
-.three {
-    animation-name: appear;
-    animation-duration: 3s;
-}
-
-.four {
-    animation-name: appear;
-    animation-duration: 4s;
+@keyframes appear_and_move_left {
+    from {opacity: 0; left: -200px;}
+    to {opacity: 1; left: 0px;}
 }
 
 @keyframes appear {
     from {opacity: 0;}
     to {opacity: 1;}
-}
-
-@keyframes bg_colour {
-    from {background-color: white;}
-    to {background-color: #313131;}
 }

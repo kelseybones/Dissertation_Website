@@ -32,6 +32,9 @@ body {
 nav {
     top: 40%;
     position: fixed;
+            
+    animation-name: appear_and_move_left;
+    animation-duration: 1.5s;
 }
 
 a {
@@ -49,6 +52,10 @@ h1 {
     font-family: Titles;
     font-size: 1.8em;
     padding-bottom: 5px;
+        
+    position: relative;
+    animation-name: appear_and_move;
+    animation-duration: 1.3s;
 }
 
 h2 {
@@ -80,6 +87,9 @@ q {
     grid-row-start: 1;
     grid-row-end: 4;
     max-width: 35em;
+    
+    animation-name: appear;
+    animation-duration: 3s;
 }
 
 .item_two {
@@ -102,12 +112,17 @@ q {
     max-width: 35em;
 }
 
+@keyframes appear_and_move {
+    from {opacity: 0; top: -200px;}
+    to {opacity: 1; top: 0px;}
+}
+
+@keyframes appear_and_move_left {
+    from {opacity: 0; left: -200px;}
+    to {opacity: 1; left: 0px;}
+}
+
 @keyframes appear {
     from {opacity: 0;}
     to {opacity: 1;}
-}
-
-@keyframes bg_colour {
-    from {background-color: white;}
-    to {background-color: #313131;}
 }
