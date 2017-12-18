@@ -112,11 +112,7 @@ q {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
-    padding-top: 10%;
-    padding-bottom: 15%;
-    font-family: Titles;
-    font-size: 1.4em;
-    float: right;
+    grid-row-end: 7;
 }
 
 .item_three {
@@ -143,6 +139,17 @@ q {
     margin-left: 50px;
     text-align: right;
     max-width: 35em;
+}
+
+.item_six {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    padding-top: 10%;
+    padding-bottom: 15%;
+    font-family: Titles;
+    font-size: 1.4em;
+    float: right;
 }
 
 .one {
