@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Titles;
+    src: url(fonts/Ftreetime-Tiempo.ttf);
+}
+
+@font-face {
+    font-family: body;
+    src: url(fonts/Freetime-Averta.otf)
+}
+
+body {
+    background-color: white;
+    font-family: body;
+    font-size: 1em;
+    line-height: 1.8em;
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 15% 35% 40% 10%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    padding-top: 10%;
+}
+
+
+nav {
+    top: 40%;
+    position: fixed;
+}
+
+a {
+    font-family: Titles;
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+}
+
+a:hover {
+    color: #F0C22E;
+}
+
+h1 {
+    font-family: Titles;
+    font-size: 1.8em;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-family: Titles;
+    font-size: 1.4em;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-family: Titles;
+    font-size: 1.2em;
+    padding-bottom: 25px;
+    padding-top: 100px;
+}
+
+p {
+    line-height: 1.8;
+}
+
+q {
+    font-family: Titles;
+    font-size: 1.4em;
+    max-width: 35em;
+}
+
+.item_one {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    max-width: 35em;
+}
+
+.item_1 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    text-align: right;
+    margin-left: 50px;
+}
+
+.intrinsic-container {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+}
+ 
+.intrinsic-container-16x9 {
+    padding-bottom: 56.25%;
+}
+ 
+.intrinsic-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.item_two {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    max-width: 35em;
+}
+
+.item_three {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 10;
+    max-width: 35em;
+}
+
+.item_four {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    margin-left: 50px;
+    text-align: right;
+    max-width: 35em;
+}
+
+.item_five {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    margin-left: 50px;
+    text-align: right;
+    max-width: 35em;
+}
+
+.one {
+    animation-name: appear;
+    animation-duration: 1s;
+}
+
+.two {
+    animation-name: appear;
+    animation-duration: 2s;
+}
+
+.three {
+    animation-name: appear;
+    animation-duration: 3s;
+}
+
+.four {
+    animation-name: appear;
+    animation-duration: 4s;
+}
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes bg_colour {
+    from {background-color: white;}
+    to {background-color: #313131;}
+}

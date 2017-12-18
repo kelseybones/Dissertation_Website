@@ -14,17 +14,12 @@
 }
 
 body {
-    background-color: white;
+    background-color: #313131;
     font-family: body;
+    color: white;
     font-size: 1em;
     line-height: 1.8em;
     font-family: sans-serif;
-}
-
-
-.dark {
-    background-color: #313131;
-    color: white;
     animation-name: bg_colour;
     animation-duration: 1s;
 }
@@ -36,7 +31,6 @@ body {
     padding-top: 10%;
 }
 
-
 nav {
     top: 40%;
     position: fixed;
@@ -45,19 +39,11 @@ nav {
 a {
     font-family: Titles;
     text-decoration: none;
-    color: black;
+    color: white;
     transition: color 0.5s;
 }
 
 a:hover {
-    color: #F0C22E;
-}
-
-a.white {
-    color: white;
-}
-
-a.white:hover {
     color: #F0C22E;
 }
 
@@ -84,13 +70,8 @@ p {
     line-height: 1.8;
 }
 
-p.dark {
-    line-height: 1.4;
-}
-
 q {
     font-family: Titles;
-    font-weight: 700;
     font-size: 1.4em;
     max-width: 35em;
 }

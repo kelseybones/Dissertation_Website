@@ -25,6 +25,7 @@ body {
 nav {
     top: 40%;
     position: fixed;
+    z-index: 100;
 }
 
 h1 {
