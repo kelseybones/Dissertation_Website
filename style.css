@@ -88,6 +88,11 @@ p.dark {
     line-height: 1.4;
 }
 
+q {
+    font-family: Titles;
+    font-size: 1.4em;
+}
+
 .item_one {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -115,8 +120,6 @@ p.dark {
     margin-left: 50px;
     text-align: right;
     max-width: 35em;
-    font-family: Titles;
-    font-size: 1.4em;
 }
 
 .one {
