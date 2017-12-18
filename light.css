@@ -113,6 +113,7 @@ q {
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 7;
+    max-width: 35em;
 }
 
 .item_three {
