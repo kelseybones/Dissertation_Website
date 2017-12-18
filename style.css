@@ -115,6 +115,8 @@ p.dark {
     margin-left: 50px;
     text-align: right;
     max-width: 35em;
+    font-family: Titles;
+    font-size: 1.4em;
 }
 
 .one {
