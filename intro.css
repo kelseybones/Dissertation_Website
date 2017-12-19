@@ -23,6 +23,7 @@ body {
 }
 
 nav {
+    font-family: Titles;
     right: 0;
     padding-right: 15px;
     display: flex;

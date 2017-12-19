@@ -30,6 +30,7 @@ body {
 
 
 nav {
+    font-family: Titles;
     right: 0;
     padding-right: 15px;
     display: flex;
@@ -102,7 +103,7 @@ q {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 2;
     max-width: 35em;
     
     animation-name: appear;
@@ -117,7 +118,7 @@ q {
     padding-bottom: 15%;
     font-family: Titles;
     font-size: 1.4em;
-    float: right;
+    text-align: right;
 }
 
 .item_three {
