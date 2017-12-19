@@ -30,14 +30,29 @@ body {
 
 }
 
-
 nav {
-    top: 40%;
+    right: 0;
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
     position: fixed;
-    z-index: 100;
+    background-color: white;
+    float: right;
+    text-align: right;
     
-    animation-name: appear_and_move_left;
+    animation-name: appear_and_move;
     animation-duration: 1.5s;
+}
+
+nav a {
+    margin-left: 25px;
+    color: black;
+    font-size: 1em;
+    letter-spacing: 5px;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a {
@@ -179,4 +194,67 @@ q {
 @keyframes appear {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@media only screen and 
+    (min-device-width : 0px) and 
+    (max-device-width : 1024px) 
+{
+      
+.item_one {
+    padding-top: 10px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+    
+.item_1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 2;
+    margin-top: 50px;
+    margin-left: 0;
+}
+
+.item_two {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.item_three {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    margin-left: 0;
+}
+
+.item_four {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 4;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 0;
+}
+
+.item_five {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 6;
+    margin-bottom: 100px;
+    text-align: left;
+    margin-left: 0;
+}
+
+.item_six {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 7;
+    margin-left: 0;
+}
+        
 }

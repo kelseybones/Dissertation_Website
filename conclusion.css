@@ -30,11 +30,28 @@ body {
 
 
 nav {
-    top: 40%;
+    right: 0;
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
     position: fixed;
-            
-    animation-name: appear_and_move_left;
+    background-color: white;
+    float: right;
+    text-align: right;
+    
+    animation-name: appear_and_move;
     animation-duration: 1.5s;
+}
+
+nav a {
+    margin-left: 25px;
+    color: black;
+    font-size: 1em;
+    letter-spacing: 5px;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a {
@@ -112,6 +129,10 @@ q {
     max-width: 35em;
 }
 
+.list {
+    padding-top: 50px;
+}
+
 @keyframes appear_and_move {
     from {opacity: 0; top: -200px;}
     to {opacity: 1; top: 0px;}
@@ -125,4 +146,34 @@ q {
 @keyframes appear {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@media only screen and 
+    (min-device-width : 0px) and 
+    (max-device-width : 1024px) 
+{
+      
+    .item_one {
+    padding-top: 10px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    }
+    
+    .item_two {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 4;
+
+    }
+
+    .item_three {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 3;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 50px;
+    }
 }

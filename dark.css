@@ -32,11 +32,28 @@ body {
 }
 
 nav {
-    top: 40%;
+    right: 0;
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
     position: fixed;
-        
-    animation-name: appear_and_move_left;
+    background-color: #313131;
+    float: right;
+    text-align: right;
+    
+    animation-name: appear_and_move;
     animation-duration: 1.5s;
+}
+
+nav a {
+    margin-left: 25px;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 5px;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a {
@@ -174,4 +191,70 @@ q {
 @keyframes appear {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@media only screen and 
+    (min-device-width : 0px) and 
+    (max-device-width : 1024px) 
+{
+      
+    .item_one {
+    padding-top: 10px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    }
+    
+    .item_two {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    }
+
+    .item_three {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    }
+
+    .item_four {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1;
+    text-align: left;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    margin-left: 0;
+    }
+
+    .item_five {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 3;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 0;
+    }
+
+    .item_six {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 5;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 50px;
+    }
+
+    .bottom_nav {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 7;
+    }
+    
+    .item_seven {
+        opacity: 0;
+    }
 }
